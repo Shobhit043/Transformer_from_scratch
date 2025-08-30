@@ -185,3 +185,8 @@ def train_model(config):
       "optimizer_state_dict" : optimizer.state_dict(),
       "global_step":global_step    
     },model_file_name)
+
+if __name__=='__main__':
+  cfg = get_config()
+  train_model(dict(cfg))
+
